@@ -2,7 +2,7 @@ from flask import Flask, request
 import joblib
 
 app = Flask(__name__)
-model = joblib.load(open('model_joblib2', 'rb'))
+model = joblib.load(open('model_joblib3', 'rb'))
 
 
 @app.route('/predict', methods=['POST'])
